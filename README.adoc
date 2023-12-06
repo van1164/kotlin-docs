@@ -1,0 +1,13 @@
+= kotlin-docs
+
+== 스코프함수
+
+=== let과 run으로  if NotNull else Null
+
+```kotlin
+newUsers.find {it.id == location.id}?.let {
+      // Null 이 아닐때 수행
+}?: run{
+    // Null 일때 수행
+}
+```
